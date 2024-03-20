@@ -1,0 +1,15 @@
+
+<h1>API de imagenes</h1>
+<p>Esta api es una buscador de imagenes</p>
+<div class="container">
+  <div class="search-container">
+    <input type="text" #searchQuery placeholder="Search for photos">
+    <button (click)="searchPhotos(searchQuery.value)">Search</button>
+  </div>
+  
+  <div class="photo-gallery" *ngIf="photos.length">
+    <div class="photo" *ngFor="let photo of photos">
+      <img [src]="photo.src.large" alt="{{ photo.photographer }}">
+    </div>
+  </div>
+</div>

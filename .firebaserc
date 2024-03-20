@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "dist/portaproyec/browser",
+    "q": "hosteoportafolio",
+    "ph": "hosteoportafolio"
+  },
+  "targets": {},
+  "etags": {}
+}
